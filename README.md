@@ -35,7 +35,7 @@ two refined variants.
 ### Datasets
 
 -   **MS MARCO**
--   **TREC CAR (Year 3 & Year 4)**
+-   **TREC CAR Y3**
 
 ### Neural Ranking Models
 
@@ -102,6 +102,20 @@ unranking**.
     hyperparameters**, improving robustness and practical applicability.
 
 ------------------------------------------------------------------------
+
+## Data and Pretrained Models
+
+We provide **example machine unranking datasets** derived from **MS MARCO** and **TREC CAR**, together with **pretrained neural ranking models** trained on the corresponding *original datasets*.  
+These pretrained models can be **directly used as starting points for machine unranking experiments**, without requiring additional training from scratch.
+
+All example datasets and pretrained model checkpoints are available via **OneDrive**:
+
+🔗 https://1drv.ms/f/c/00c07038f4fdc681/IgC_c3qKUQxvS7Z3rbjxwDf0AWpElzh7agp6QIvqvwBVLYE
+
+In addition, we provide a **separate repository** dedicated to constructing **custom machine unranking datasets**, including detailed instructions and scripts for preparing your own data:
+
+🔗 https://github.com/JingruiHou/unranking_datasets
+
 
 ## Usage
 
