@@ -1,0 +1,36 @@
+
+
+# vocab
+vocab_path: /home/lunet/cojh6/Documents/machine_unranking/word-vocab-glove.tsv
+# word2vec
+embed: /home/lunet/cojh6/Documents/machine_unranking/glove.6B.300d.txt
+embed_dim: 300
+unk_token: 0
+
+
+# model
+seed: 10
+embedding_trainable: True
+conv_output_size: [16,16,16,16,16]
+conv_kernel_size:  [[3,3],[3,3],[3,3],[3,3],[3,3]]
+adaptive_pooling_size:  [[36,90],[18,60],[9,30],[6,20],[3,10]]
+query_max_len: 20
+target_max_len: 200
+batch_size: 1024
+prediction_batch_size: 1024
+distil_batch_size: 32
+epochs: 20
+distil_epochs: 600
+# learning_rate: 0.0001
+# embedding_learning_rate:  0.00001
+learning_rate: 0.0001
+embedding_learning_rate:  0.000005
+distil_learning_rate: 0.00001
+model_type: match_pyramid
+model_name: MatchPyramid
+freeze_d_emb: False
+freeze_q_emb: False
+q_d_emb_same: True
+
+distillation_margin: 0
+distillation_ratio: 0.1

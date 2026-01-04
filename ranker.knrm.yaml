@@ -1,0 +1,32 @@
+
+
+# vocab
+vocab_path: /home/lunet/cojh6/Documents/machine_unranking/word-vocab-glove.tsv
+# word2vec
+embed: /home/lunet/cojh6/Documents/machine_unranking/glove.6B.300d.txt
+embed_dim: 300
+unk_token: 0
+
+
+# model
+seed: 10
+embedding_trainable: True
+n_kernels: 11
+query_max_len: 20
+target_max_len: 200
+batch_size: 1024
+prediction_batch_size: 1024
+distil_batch_size: 32
+epochs: 20
+distil_epochs: 200
+learning_rate: 0.001
+embedding_learning_rate: 0.000007
+distil_learning_rate: 0.00007
+model_type: knrm
+model_name: KNRM
+freeze_d_emb: False
+freeze_q_emb: False
+q_d_emb_same: True
+
+distillation_margin: 0
+distillation_ratio: 0.02

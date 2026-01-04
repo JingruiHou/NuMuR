@@ -1,0 +1,20 @@
+seed: 10
+bert_pretrained_model: distilbert-base-uncased
+bert_trainable: True
+batch_size: 32
+prediction_batch_size: 32
+learning_rate: 0.000007
+colbert_compression_dim: 768
+dropout: 0.0
+return_vecs: False
+trainable: False
+
+unk_token: 0
+query_max_len: 20
+target_max_len: 200
+model_type: bertcat
+model_name: BERTCat
+concatenate_query_doc: True
+epochs: 3
+from_self.config: True
+need_merge: True
